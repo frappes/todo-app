@@ -48,7 +48,7 @@
     
     NSData* serialized = [[NSUserDefaults standardUserDefaults] objectForKey:@"todo"];
     NSMutableArray* array = (NSMutableArray*)[NSKeyedUnarchiver unarchiveObjectWithData:serialized];
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"todo"];
+
     if(!array ) {
         self.toDoItems = [[NSMutableArray alloc] init];
     } else {
@@ -87,6 +87,7 @@
     NSLog(@"+ tapped");
     [self.toDoItems addObject:@"TO DO"];
     [self.tableView reloadData];
+    [self saveList];
 }
 
 - (void)didReceiveMemoryWarning
@@ -198,7 +199,6 @@
 {
     NSLog(@"saving");
     NSData* serialized = [NSKeyedArchiver archivedDataWithRootObject:self.toDoItems];
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"todo"];
     [[NSUserDefaults standardUserDefaults] setObject:serialized forKey:@"todo"];
 }
 
