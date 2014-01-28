@@ -48,12 +48,11 @@
     
     NSData* serialized = [[NSUserDefaults standardUserDefaults] objectForKey:@"todo"];
     NSMutableArray* array = (NSMutableArray*)[NSKeyedUnarchiver unarchiveObjectWithData:serialized];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"todo"];
     if(!array ) {
         self.toDoItems = [[NSMutableArray alloc] init];
-        NSLog(@"NEW");
     } else {
         self.toDoItems = array;
-        NSLog(@"Saved");
     }
     
     self.tableView.delegate = self;
@@ -86,7 +85,7 @@
 - (void)onAdd:(id)sender
 {
     NSLog(@"+ tapped");
-    [self.toDoItems addObject:@"New To Do Item"];
+    [self.toDoItems addObject:@"TO DO"];
     [self.tableView reloadData];
 }
 
@@ -148,8 +147,6 @@
     
     //UITableViewCell* cell = [self.tableView cellForRowAtIndexPath:indexPath];
     
-    NSLog(@"height for row ");
-    
     return textRect.size.height + 25;
 }
 
@@ -199,6 +196,7 @@
 
 -(void)saveList
 {
+    NSLog(@"saving");
     NSData* serialized = [NSKeyedArchiver archivedDataWithRootObject:self.toDoItems];
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"todo"];
     [[NSUserDefaults standardUserDefaults] setObject:serialized forKey:@"todo"];
