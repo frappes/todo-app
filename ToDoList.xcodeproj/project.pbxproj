@@ -19,6 +19,10 @@
 		82E3B3C818949EC400CA8374 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E3B3B018949EC400CA8374 /* UIKit.framework */; };
 		82E3B3D018949EC400CA8374 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82E3B3CE18949EC400CA8374 /* InfoPlist.strings */; };
 		82E3B3D218949EC400CA8374 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E3B3D118949EC400CA8374 /* ToDoListTests.m */; };
+		82E3B3E71896BD7700CA8374 /* ToDoTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E3B3E61896BD7700CA8374 /* ToDoTableCell.m */; };
+		82E3B3E91896C1A800CA8374 /* ToDoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E3B3E81896C1A800CA8374 /* ToDoTableCell.xib */; };
+		82E3B3EF1896D48900CA8374 /* ToDoTableViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E3B3ED1896D48900CA8374 /* ToDoTableViewController2.m */; };
+		82E3B3F01896D48900CA8374 /* ToDoTableViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E3B3EE1896D48900CA8374 /* ToDoTableViewController2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		82E3B3CD18949EC400CA8374 /* ToDoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoListTests-Info.plist"; sourceTree = "<group>"; };
 		82E3B3CF18949EC400CA8374 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		82E3B3D118949EC400CA8374 /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
+		82E3B3E51896BD7700CA8374 /* ToDoTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoTableCell.h; sourceTree = "<group>"; };
+		82E3B3E61896BD7700CA8374 /* ToDoTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoTableCell.m; sourceTree = "<group>"; };
+		82E3B3E81896C1A800CA8374 /* ToDoTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToDoTableCell.xib; sourceTree = "<group>"; };
+		82E3B3EC1896D48900CA8374 /* ToDoTableViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoTableViewController2.h; sourceTree = "<group>"; };
+		82E3B3ED1896D48900CA8374 /* ToDoTableViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoTableViewController2.m; sourceTree = "<group>"; };
+		82E3B3EE1896D48900CA8374 /* ToDoTableViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToDoTableViewController2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,12 @@
 				82E3B3BC18949EC400CA8374 /* AppDelegate.m */,
 				82E3B3BE18949EC400CA8374 /* Images.xcassets */,
 				82E3B3B318949EC400CA8374 /* Supporting Files */,
+				82E3B3E51896BD7700CA8374 /* ToDoTableCell.h */,
+				82E3B3E61896BD7700CA8374 /* ToDoTableCell.m */,
+				82E3B3E81896C1A800CA8374 /* ToDoTableCell.xib */,
+				82E3B3EC1896D48900CA8374 /* ToDoTableViewController2.h */,
+				82E3B3ED1896D48900CA8374 /* ToDoTableViewController2.m */,
+				82E3B3EE1896D48900CA8374 /* ToDoTableViewController2.xib */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -221,6 +237,8 @@
 			files = (
 				82E3B3B718949EC400CA8374 /* InfoPlist.strings in Resources */,
 				82E3B3BF18949EC400CA8374 /* Images.xcassets in Resources */,
+				82E3B3F01896D48900CA8374 /* ToDoTableViewController2.xib in Resources */,
+				82E3B3E91896C1A800CA8374 /* ToDoTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E3B3E71896BD7700CA8374 /* ToDoTableCell.m in Sources */,
+				82E3B3EF1896D48900CA8374 /* ToDoTableViewController2.m in Sources */,
 				82E3B3BD18949EC400CA8374 /* AppDelegate.m in Sources */,
 				82E3B3B918949EC400CA8374 /* main.m in Sources */,
 			);
